@@ -44,6 +44,7 @@ public class testaConta {
 	System.out.println("Saldo da Conta1: " + conta1.getSaldo());
 	System.out.println("Saldo da Conta2: " + conta2.getSaldo());
 	System.out.println("Saldo da Conta3: " + conta3.getSaldo());
+	System.out.println("Tranferir 100.23 da conta2 para conta3");
 		operacoesConta.transferir(conta2, 100.23, conta3);
 	System.out.println("");
 	System.out.println("Saldo da Conta1: " + conta1.getSaldo());

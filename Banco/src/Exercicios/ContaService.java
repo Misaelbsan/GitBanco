@@ -9,7 +9,20 @@ public class ContaService {
 		contaSaque.setSaldo(contaSaque.getSaldo() - valor);
 	}
 	public void transferir(Conta contaSaque, double valor, Conta contaDestino){
-		this.sacar(contaSaque, valor);
-		this.depositar(contaDestino, valor);
+		transferir(contaSaque, valor, contaDestino, 0);
 	}
+	public void transferir(Conta contaSaque, double valor, Conta contaDestino, double limite){
+		if((contaSaque.getSaldo() + limite) < valor){
+			System.out.println("Saldo Insuficiente para esta operação");
+		return;
+	}
+	this.sacar(contaSaque, valor);
+	this.depositar(contaDestino, valor);
+
+		
+	
+	}
+	
 }
+
+
