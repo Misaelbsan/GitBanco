@@ -13,7 +13,12 @@ public class Conta {
 		
 		System.out.println("Data de Abertura da conta:" + this.dataAbertura.toString());	
 	}
-	
+	public Conta(String nome, int nconta){
+		this();
+		numero = nconta;
+		titular = nome;
+		saldo = 0.0;
+	}
 	public int getNumero() {
 		return numero;
 	}
